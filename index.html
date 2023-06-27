@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shivank Pandey">
+    <meta name="description" content="This Website Gives You Current Weather Forecast Of Any City">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="icon" type="image/x-icon" href="SP NAME FAVICON.png">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button>SEARCH</button>
+        </div>
+        <div class="weather">
+            <img src="Images/clear.png" alt="SORRY" class="weathericon" id="WW">
+            <h1 class="temp" id="T">TEMPRATURE IN °C</h1>
+            <h2 class="city" id="C">CITY NAME</h2>
+        </div>
+        <div class="details">
+            <div class="hm">
+                <img src="Images/humidity.png" alt="OOPS">
+                <p id="hm">In %</p>
+                <p id="hm">Humidity</p>
+            </div>
+            <div class="ws">
+                <img src="Images/wind.png" alt="OOPS">
+                <p id="ws">In Km/Hour</p>
+                <p id="ws">Wind Speed</p>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>

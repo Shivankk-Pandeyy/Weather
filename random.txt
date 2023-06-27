@@ -1,0 +1,12 @@
+const apikey="bc10ec65f2f0c474ce63aa769a6c9dee";
+const apiurl="https://api.openweathermap.org/data/2.5/weather?units=metric&q=durg";
+async function checkweather(){
+    const response=await fetch(apiurl+`&appid=${apikey}`);
+    var data=await response.json();
+    console.log(data);
+    document.getElementById("C").innerHTML=data.name;
+    document.getElementById("T").innerHTML=Math.round(data.main.temp)+"°C";
+    document.getElementById("hm").innerHTML=data.main.humidity+"%";
+    document.getElementById("ws").innerHTML=data.wind.speed+"Km/h";
+}
+checkweather();
